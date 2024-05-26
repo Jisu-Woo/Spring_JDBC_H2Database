@@ -1,0 +1,19 @@
+<html xmlns:th="https://www.thymeleaf.org">
+	
+<head>
+
+</head>
+	
+<body>
+<ul>
+	<li th:each="item : ${items}">
+		<span th:text="${item.id} + ', ' + ${item.lastName} + ', ' + ${item.firstName} + ', ' + ${item.address} + ', ' + ${item.email}"></span>
+		
+	</li>
+</ul>	
+
+	
+	
+</body>
+	
+</html>
